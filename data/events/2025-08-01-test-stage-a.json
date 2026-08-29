@@ -1,62 +1,38 @@
 {
   "id": "2025-08-01-test-stage-a",
-  "title": "测试舞台 A",
+  "title": "霸王别姬",
   "date": "2025-08-01",
-  "summary": "这是一个测试事件，用于验证跨平台资料链接是否能正常显示与跳转。以后可以把这里换成真实的舞台/作品简介。",
+  "summary": "真实资料测试：这里换成了《霸王别姬》舞台的真实链接，用来测试跨平台跳转的实际效果。日期暂为占位，待确认。",
   "materials": [
     {
       "category": "正式内容",
       "platform": "Bilibili",
-      "title": "官方完整舞台（示例链接）",
-      "url": "https://www.bilibili.com/"
+      "title": "官方完整舞台",
+      "url": "https://www.bilibili.com/video/BV19J411h7bL/"
     },
     {
       "category": "正式内容",
-      "platform": "YouTube",
-      "title": "Official Performance Video（示例链接）",
-      "url": "https://www.youtube.com/"
+      "platform": "Bilibili",
+      "title": "观察日记",
+      "url": "https://www.bilibili.com/video/BV19J411h7bL/"
     },
     {
       "category": "官方物料",
       "platform": "微博",
-      "title": "工作室舞台照片（示例链接）",
-      "url": "https://weibo.com/"
-    },
-    {
-      "category": "官方物料",
-      "platform": "微博",
-      "title": "张艺兴本人微博（示例链接）",
-      "url": "https://weibo.com/"
-    },
-    {
-      "category": "官方物料",
-      "platform": "抖音",
-      "title": "官方幕后花絮视频（示例链接）",
-      "url": "https://www.douyin.com/"
+      "title": "舞台图片",
+      "url": "https://weibo.com/5582937157/4455724295760349"
     },
     {
       "category": "当时的讨论",
       "platform": "知乎",
-      "title": "如何评价这次舞台？（示例链接）",
-      "url": "https://www.zhihu.com/"
-    },
-    {
-      "category": "当时的讨论",
-      "platform": "小红书",
-      "title": "舞台造型相关帖子（示例链接）",
-      "url": "https://www.xiaohongshu.com/"
-    },
-    {
-      "category": "当时的讨论",
-      "platform": "贴吧",
-      "title": "相关讨论帖（示例链接）",
-      "url": "https://tieba.baidu.com/"
+      "title": "舞台赏析",
+      "url": "https://www.zhihu.com/question/364040856"
     },
     {
       "category": "其他",
-      "platform": "媒体",
-      "title": "新闻报道：舞台引发热议（示例链接）",
-      "url": "https://www.thepaper.cn/"
+      "platform": "Bilibili",
+      "title": "饭拍",
+      "url": "https://www.bilibili.com/video/BV1aJ411b7Lr?p=2"
     }
   ]
 }
