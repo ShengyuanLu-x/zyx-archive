@@ -1,0 +1,62 @@
+{
+  "id": "2025-08-01-test-stage-a",
+  "title": "测试舞台 A",
+  "date": "2025-08-01",
+  "summary": "这是一个测试事件，用于验证跨平台资料链接是否能正常显示与跳转。以后可以把这里换成真实的舞台/作品简介。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "官方完整舞台（示例链接）",
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "category": "正式内容",
+      "platform": "YouTube",
+      "title": "Official Performance Video（示例链接）",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "工作室舞台照片（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "张艺兴本人微博（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "抖音",
+      "title": "官方幕后花絮视频（示例链接）",
+      "url": "https://www.douyin.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "知乎",
+      "title": "如何评价这次舞台？（示例链接）",
+      "url": "https://www.zhihu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "小红书",
+      "title": "舞台造型相关帖子（示例链接）",
+      "url": "https://www.xiaohongshu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "贴吧",
+      "title": "相关讨论帖（示例链接）",
+      "url": "https://tieba.baidu.com/"
+    },
+    {
+      "category": "其他",
+      "platform": "媒体",
+      "title": "新闻报道：舞台引发热议（示例链接）",
+      "url": "https://www.thepaper.cn/"
+    }
+  ]
+}

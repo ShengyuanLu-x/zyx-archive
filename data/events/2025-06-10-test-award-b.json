@@ -1,0 +1,44 @@
+{
+  "id": "2025-06-10-test-award-b",
+  "title": "测试颁奖典礼 B",
+  "date": "2025-06-10",
+  "summary": "第二个测试事件，模拟一次颁奖典礼相关资料的整理方式。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "颁奖礼直拍（示例链接）",
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "工作室获奖感言全文（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "小红书",
+      "title": "后台造型花絮（示例链接）",
+      "url": "https://www.xiaohongshu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "知乎",
+      "title": "这次获奖实至名归吗？（示例链接）",
+      "url": "https://www.zhihu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "抖音",
+      "title": "现场混剪视频（示例链接）",
+      "url": "https://www.douyin.com/"
+    },
+    {
+      "category": "其他",
+      "platform": "媒体",
+      "title": "新闻：获奖名单公布（示例链接）",
+      "url": "https://news.sina.com.cn/"
+    }
+  ]
+}

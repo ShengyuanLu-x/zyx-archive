@@ -1,0 +1,44 @@
+{
+  "id": "2024-09-01-test-mv-e",
+  "title": "测试 MV 发布 E",
+  "date": "2024-09-01",
+  "summary": "第五个测试事件，模拟一次音乐作品 MV 发布相关资料的整理方式。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "YouTube",
+      "title": "MV 正片（示例链接）",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "MV 正片（国内版，示例链接）",
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "MV 拍摄花絮（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "小红书",
+      "title": "歌词/穿搭安利帖（示例链接）",
+      "url": "https://www.xiaohongshu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "贴吧",
+      "title": "新歌讨论楼（示例链接）",
+      "url": "https://tieba.baidu.com/"
+    },
+    {
+      "category": "其他",
+      "platform": "媒体",
+      "title": "新闻：新歌上线各平台霸榜（示例链接）",
+      "url": "https://www.thepaper.cn/"
+    }
+  ]
+}

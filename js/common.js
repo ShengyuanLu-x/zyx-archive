@@ -1,0 +1,49 @@
+// 这个文件是给两个页面（首页 / 事件详情页）共用的小工具函数。
+// 非程序员不需要看懂这个文件，正常维护资料完全不需要碰它。
+
+const PLATFORM_STYLES = {
+  "微博": { bg: "#E6162D", fg: "#ffffff" },
+  "抖音": { bg: "#000000", fg: "#ffffff" },
+  "小红书": { bg: "#FF2442", fg: "#ffffff" },
+  "知乎": { bg: "#0084FF", fg: "#ffffff" },
+  "贴吧": { bg: "#3385FF", fg: "#ffffff" },
+  "Bilibili": { bg: "#FB7299", fg: "#ffffff" },
+  "B站": { bg: "#FB7299", fg: "#ffffff" },
+  "YouTube": { bg: "#FF0000", fg: "#ffffff" },
+  "媒体": { bg: "#555555", fg: "#ffffff" }
+};
+
+const DEFAULT_PLATFORM_STYLE = { bg: "#888888", fg: "#ffffff" };
+
+const CATEGORY_ORDER = ["正式内容", "官方物料", "当时的讨论", "其他"];
+
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function platformBadgeHtml(platform) {
+  const style = PLATFORM_STYLES[platform] || DEFAULT_PLATFORM_STYLE;
+  return `<span class="platform-badge" style="background:${style.bg};color:${style.fg}">${escapeHtml(platform)}</span>`;
+}
+
+async function fetchJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`无法加载 ${url}（状态码 ${res.status}）`);
+  }
+  return res.json();
+}
+
+async function loadAllEvents() {
+  const manifest = await fetchJson("data/events/manifest.json");
+  const events = await Promise.all(
+    manifest.map((id) => fetchJson(`data/events/${id}.json`))
+  );
+  events.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  return events;
+}

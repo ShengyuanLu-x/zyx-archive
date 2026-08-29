@@ -1,0 +1,26 @@
+{
+  "id": "2023-05-15-test-old-f",
+  "title": "测试往年活动 F",
+  "date": "2023-05-15",
+  "summary": "第六个测试事件，时间比较早，用于测试网站按时间排序是否正确。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "活动录像（示例链接）",
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "活动当天微博（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "知乎",
+      "title": "多年后回看这次活动（示例链接）",
+      "url": "https://www.zhihu.com/"
+    }
+  ]
+}

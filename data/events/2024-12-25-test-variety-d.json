@@ -1,0 +1,32 @@
+{
+  "id": "2024-12-25-test-variety-d",
+  "title": "测试综艺 D",
+  "date": "2024-12-25",
+  "summary": "第四个测试事件，模拟一次综艺节目相关资料的整理方式。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "节目完整版（示例链接）",
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "抖音",
+      "title": "节目组官方切片（示例链接）",
+      "url": "https://www.douyin.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "工作室花絮图集（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "知乎",
+      "title": "这期综艺的看点是什么？（示例链接）",
+      "url": "https://www.zhihu.com/"
+    }
+  ]
+}

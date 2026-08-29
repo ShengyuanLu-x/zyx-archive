@@ -1,0 +1,32 @@
+{
+  "id": "2025-04-20-test-interview-c",
+  "title": "测试专访 C",
+  "date": "2025-04-20",
+  "summary": "第三个测试事件，模拟一次媒体专访相关资料的整理方式。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "YouTube",
+      "title": "完整专访视频（示例链接）",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "category": "官方物料",
+      "platform": "微博",
+      "title": "专访预告（示例链接）",
+      "url": "https://weibo.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "贴吧",
+      "title": "专访内容摘录讨论（示例链接）",
+      "url": "https://tieba.baidu.com/"
+    },
+    {
+      "category": "当时的讨论",
+      "platform": "小红书",
+      "title": "专访金句合集（示例链接）",
+      "url": "https://www.xiaohongshu.com/"
+    }
+  ]
+}
