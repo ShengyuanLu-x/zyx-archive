@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zyx-archive",
+  "compatibility_date": "2026-08-28",
+  "assets": {
+    "directory": "."
+  }
+}
