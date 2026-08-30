@@ -1,0 +1,82 @@
+{
+  "tabs": [
+    {
+      "id": "comprehensive",
+      "title": "综合",
+      "color": "#D0CBE3",
+      "children": [
+        {
+          "id": "stage-god",
+          "title": "舞台之神",
+          "children": [
+            { "type": "event", "eventId": "2025-08-01-test-stage-a" }
+          ]
+        },
+        { "id": "interview-king", "title": "采访界泥石流", "children": [] },
+        { "id": "music-genius", "title": "音乐天才", "children": [] },
+        { "id": "box-office-star", "title": "百亿影帝", "children": [] },
+        { "id": "always-learning", "title": "学无止境", "children": [] }
+      ]
+    },
+    {
+      "id": "cross-platform",
+      "title": "跨越平台",
+      "color": "#9997BF",
+      "children": [
+        { "id": "jiashuai-tieba", "title": "加帅与贴吧", "children": [] },
+        {
+          "id": "bilibili-prince",
+          "title": "阿b小王子",
+          "children": [
+            { "id": "tian-dang", "title": "甜党", "children": [] },
+            { "id": "yan-dang", "title": "盐党", "children": [] },
+            { "id": "xian-dang", "title": "仙党", "children": [] },
+            { "id": "yao-dang", "title": "妖党", "children": [] }
+          ]
+        },
+        {
+          "id": "lianhu",
+          "title": "莲乎",
+          "intro": "“一个努力对抗风车的堂吉诃德。名利的洪流呼啸而过，他保持一点幼稚的火种逆行。我只是旁观也含泪。” —— 张棉被",
+          "children": [
+            {
+              "type": "link",
+              "platform": "知乎",
+              "title": "如何评价张艺兴",
+              "url": "https://www.zhihu.com/question/33467311"
+            }
+          ]
+        },
+        { "id": "dd", "title": "dd", "children": [] }
+      ]
+    },
+    {
+      "id": "nickname-origin",
+      "title": "昵称由来",
+      "color": "#BAAAC8",
+      "children": [
+        { "id": "guogai", "title": "锅盖", "children": [] },
+        { "id": "lianmi", "title": "莲咪", "children": [] },
+        { "id": "baobao", "title": "宝宝", "children": [] },
+        { "id": "bob", "title": "bob", "children": [] }
+      ]
+    },
+    {
+      "id": "candy-english",
+      "title": "喜糖英语角",
+      "color": "#D7C5D8",
+      "children": []
+    },
+    {
+      "id": "archive-summary",
+      "title": "考古汇总",
+      "color": "#ABC1C7",
+      "children": [
+        { "id": "brightstar-weibo", "title": "Brightstar 微博", "children": [] },
+        { "id": "qixi-weibo", "title": "气息微博", "children": [] },
+        { "id": "lianfen-yougeng", "title": "#莲粉 有梗#", "children": [] },
+        { "id": "hongdoushan", "title": "张艺兴红豆山", "children": [] }
+      ]
+    }
+  ]
+}
