@@ -9,6 +9,10 @@
 <body>
   <header class="site-header">
     <a class="back-link" href="index.html">← 返回列表</a>
+    <div class="site-search">
+      <input type="text" id="search-input" placeholder="搜索标题、分类、平台…" autocomplete="off" />
+      <div id="search-results" class="search-results"></div>
+    </div>
   </header>
   <main>
     <p id="status">正在加载资料…</p>
@@ -20,6 +24,8 @@
   <footer class="site-footer">测试版本，资料均为示例链接。</footer>
 
   <script src="js/common.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/event.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
