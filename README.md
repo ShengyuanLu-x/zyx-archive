@@ -1,8 +1,8 @@
 # 张艺兴考古网站（Phase 0 技术测试版）
 
-**测试网址：https://zyx-archive.syluxback.workers.dev**
+**正式测试网址：https://archiveoflay.com**（部署在香港 VPS 上，支持 HTTPS）
 
-（网址里的 `syluxback` 是 Cloudflare 账号名，跟 GitHub 上的 `ShengyuanLu-x` 仓库是两回事，不用管这个不一致，不影响使用。这是免费测试阶段的临时网址，以后正式上线可以换成自己的域名。）
+备用/对照网址：https://zyx-archive.syluxback.workers.dev（Cloudflare，国内访问不理想，仅作对照）
 
 这份说明假设你**完全没有编程经验**。第一次出现的技术名词，都会在括号里简单解释。
 
