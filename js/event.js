@@ -14,7 +14,7 @@ async function renderEventPage() {
     const ev = await fetchJson(`data/events/${id}.json`);
     statusEl.remove();
 
-    document.title = ev.title + " - 张艺兴考古网站（测试版）";
+    document.title = ev.title + " - Archive of Lay";
     document.getElementById("event-title").textContent = ev.title;
     document.getElementById("event-date").textContent = ev.date;
     document.getElementById("event-summary").textContent = ev.summary || "";
