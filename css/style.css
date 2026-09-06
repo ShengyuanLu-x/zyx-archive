@@ -271,6 +271,39 @@ main {
   font-size: 14px;
 }
 
+.link-card-pending {
+  opacity: 0.6;
+}
+
+.pending-tag {
+  flex: 0 0 auto;
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+/* 年份分界线（用在"按年份罗列链接"的分类里，不是单独一个板块，只是视觉分隔） */
+.year-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 -2px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.year-divider::before,
+.year-divider::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--border);
+}
+
 /* 首页事件卡片（如果直接用旧版列表，保留兼容） */
 #event-list {
   display: flex;

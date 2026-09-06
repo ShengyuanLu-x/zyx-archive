@@ -39,7 +39,19 @@ async function renderChildCard(child, accentColor) {
     }
   }
 
+  if (child.type === "divider") {
+    return `<div class="year-divider"><span>${escapeHtml(child.label)}</span></div>`;
+  }
+
   if (child.type === "link") {
+    if (!child.url) {
+      return `
+        <div class="node-card link-card link-card-pending">
+          ${platformBadgeHtml(child.platform || "?")}
+          <span class="node-card-title">${escapeHtml(child.title || "(未命名链接)")}</span>
+          <span class="pending-tag">待补充</span>
+        </div>`;
+    }
     return `
       <a class="node-card link-card" href="${escapeHtml(child.url)}" target="_blank" rel="noopener noreferrer">
         ${platformBadgeHtml(child.platform || "?")}

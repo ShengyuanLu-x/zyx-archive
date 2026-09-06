@@ -9,13 +9,90 @@
           "id": "stage-god",
           "title": "舞台之神",
           "children": [
-            { "type": "event", "eventId": "2025-08-01-test-stage-a" }
+            {
+              "id": "new-year-eve-stage",
+              "title": "跨年舞台",
+              "children": [
+                { "type": "link", "platform": "YouTube", "title": "141231 湖南卫视", "url": "https://www.youtube.com/watch?v=t6TY7kA93cs&pp=ygUf5byg6Im65YW0MjAxNOa5luWNl-WNq-inhui3qOW5tA%3D%3D" },
+                { "type": "link", "platform": "YouTube", "title": "151231 东方卫视", "url": "https://www.youtube.com/watch?v=xWl9DFW-MoY&pp=ygUT5byg6Im65YW0MjAxNui3qOW5tA%3D%3D" },
+                { "type": "link", "platform": "YouTube", "title": "161231 东方卫视", "url": "https://www.youtube.com/watch?v=g7DS1F-3LGk&pp=ygUT5byg6Im65YW0MjAxN-i3qOW5tA%3D%3D" },
+                { "type": "link", "platform": "YouTube", "title": "171231 湖南卫视", "url": "" },
+                { "type": "link", "platform": "YouTube", "title": "181231 湖南卫视", "url": "https://www.youtube.com/watch?v=SzzJxsqcNL8&pp=ygUf5byg6Im65YW0MjAxNOa5luWNl-WNq-inhui3qOW5tA%3D%3D" },
+                { "type": "event", "eventId": "2025-08-01-test-stage-a" }
+              ]
+            },
+            { "id": "spring-festival-gala", "title": "春晚", "children": [] },
+            {
+              "id": "concert-tours",
+              "title": "演唱会",
+              "children": [
+                { "id": "tour-1", "title": "一巡", "children": [] },
+                { "id": "tour-2", "title": "二巡", "children": [] },
+                { "id": "tour-3", "title": "三巡", "children": [] },
+                { "id": "tour-4", "title": "四巡", "children": [] },
+                { "id": "tour-5", "title": "五巡", "children": [] }
+              ]
+            },
+            { "id": "birds-nest", "title": "鸟巢", "children": [] },
+            { "id": "other-stages", "title": "其他舞台", "children": [] }
           ]
         },
-        { "id": "interview-king", "title": "采访界泥石流", "children": [] },
-        { "id": "music-genius", "title": "音乐天才", "children": [] },
-        { "id": "box-office-star", "title": "百亿影帝", "children": [] },
-        { "id": "always-learning", "title": "学无止境", "children": [] }
+        {
+          "id": "interview-king",
+          "title": "采访界泥石流",
+          "children": [
+            { "type": "link", "platform": "Bilibili", "title": "精神状态有种活着活着就偷着疯了的美感", "url": "https://www.bilibili.com/video/BV1Vr421W7N5?" }
+          ]
+        },
+        {
+          "id": "music-genius",
+          "title": "音乐天才",
+          "children": [
+            { "id": "first-child", "title": "一胎", "children": [] },
+            { "id": "second-child", "title": "二胎", "children": [] },
+            { "id": "third-child", "title": "三胎", "children": [] },
+            { "id": "fourth-child", "title": "四胎", "children": [] },
+            { "id": "dong", "title": "东", "children": [] },
+            { "id": "xi", "title": "西", "children": [] },
+            { "id": "step", "title": "step", "children": [] },
+            { "id": "nao-tian-gong", "title": "闹天宫", "children": [] },
+            { "id": "dou-zhan-sheng-fo", "title": "斗战胜佛", "children": [] },
+            { "id": "brand-songs", "title": "品牌合作曲", "children": [] },
+            { "id": "instrument-collection", "title": "乐器合集", "children": [] },
+            { "id": "gen-zheng-miao-hong", "title": "根正苗红", "children": [] },
+            { "id": "music-other", "title": "其他", "children": [] }
+          ]
+        },
+        {
+          "id": "box-office-star",
+          "title": "百亿影帝",
+          "children": [
+            { "id": "silent-love", "title": "不说话的爱", "children": [] },
+            { "id": "legend", "title": "传说", "children": [] },
+            { "id": "all-in", "title": "孤注一掷", "children": [] },
+            { "id": "changsha-nightlife", "title": "长沙夜生活", "children": [] },
+            { "id": "sweeping-storm", "title": "扫黑风暴", "children": [] },
+            { "id": "the-glory", "title": "大明风华", "children": [] },
+            { "id": "golden-eyes", "title": "黄金瞳", "children": [] },
+            { "id": "a-good-show", "title": "一出好戏", "children": [] },
+            { "id": "er-yue-hong", "title": "二月红", "children": [] },
+            { "id": "movie-other", "title": "其他", "children": [] }
+          ]
+        },
+        {
+          "id": "variety-shows",
+          "title": "综艺",
+          "children": [
+            { "id": "go-fighting", "title": "极限挑战", "children": [] },
+            { "id": "singer-2", "title": "我是唱作人2", "children": [] },
+            { "id": "street-dance", "title": "这就是街舞", "children": [] },
+            { "id": "back-to-field", "title": "向往的生活", "children": [] },
+            { "id": "pd-cut", "title": "PD cut", "children": [] },
+            { "id": "hi6", "title": "Hi6", "children": [] },
+            { "id": "variety-other", "title": "其他", "children": [] }
+          ]
+        },
+        { "id": "dream-unwavering", "title": "梦想，矢志不渝", "children": [] }
       ]
     },
     {
@@ -23,15 +100,101 @@
       "title": "跨越平台",
       "color": "#9997BF",
       "children": [
-        { "id": "jiashuai-tieba", "title": "加帅与贴吧", "children": [] },
+        { "id": "jiashuai-era", "title": "加帅时期", "children": [] },
         {
           "id": "bilibili-prince",
           "title": "阿b小王子",
           "children": [
-            { "id": "tian-dang", "title": "甜党", "children": [] },
+            {
+              "id": "tian-dang",
+              "title": "甜党",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】小嗲精系列1.0 我的张总不可能这么可爱", "url": "https://www.bilibili.com/video/BV1As411e7vX/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】小嗲精系列2.0 我的张总超绝可爱", "url": "https://www.bilibili.com/video/BV1Nx41127Ys" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】一颗糖分满满的甜菜（卖萌撒娇片段剪辑）", "url": "https://www.bilibili.com/video/BV1Hs411175k/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】专治各种不开心", "url": "https://www.bilibili.com/video/BV1Kk4y1m7nD" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】恃宠而骄小合集", "url": "https://www.bilibili.com/video/BV1vQ4y1R7ya/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】甜党复国1.0：我为什么会被小我7岁的人说可爱？", "url": "https://www.bilibili.com/video/BV1ki4y1t7Hr" },
+                { "type": "link", "platform": "Bilibili", "title": "他实在是太太太太太太太太娇娇太可爱啦！！！！！！！！【张艺兴】", "url": "https://www.bilibili.com/video/BV1EF41157fs" }
+              ]
+            },
             { "id": "yan-dang", "title": "盐党", "children": [] },
-            { "id": "xian-dang", "title": "仙党", "children": [] },
-            { "id": "yao-dang", "title": "妖党", "children": [] }
+            {
+              "id": "xian-dang",
+              "title": "仙党",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴//舔颜向踩点】处处吻吻吻吻吻吻吻我叭！", "url": "https://b23.tv/BV1fJ411A7kH" }
+              ]
+            },
+            {
+              "id": "yao-dang",
+              "title": "妖党",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "内娱第一扭星", "url": "https://b23.tv/x2p3Y4p" },
+                { "type": "link", "platform": "Bilibili", "title": "小孩子不懂事剪着玩的", "url": "https://b23.tv/eK6eH3G" },
+                { "type": "link", "platform": "Bilibili", "title": "“嘴唇旁边这颗，是美人痣吗”｜张艺兴", "url": "https://b23.tv/DBLHFBs" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】★听 力 考 试★", "url": "https://b23.tv/pGNK7mc" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】声色”", "url": "https://b23.tv/gKfxab5" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】大美人！！！我都说腻了", "url": "https://b23.tv/EUci1qU" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】一个被张总搞疯的舞蹈合集（晚上千万不要点系列） 惊艳爆表，请自备红枣", "url": "https://b23.tv/QznTQWw" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】夏·玛格丽特·你确定不请我喝一杯吗?", "url": "https://b23.tv/0RNdBMs" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】妖精本色", "url": "https://b23.tv/BHVurjE" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】嘘，一般人我不给他看", "url": "https://b23.tv/WLQcoF8" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】迷迭香 | 性感到无可救药", "url": "https://b23.tv/fmEkHpV" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】野性的狼与柔软的羊，沉溺于夜色｜九点半的红蔷薇", "url": "https://b23.tv/CmzTaYU" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【泥塑警告】长沙小辣椒的钓男法则", "url": "https://b23.tv/RmwWMHR" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴 | 自制】禁境-镜头聚焦 枪已上膛", "url": "https://b23.tv/wonNTo7" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴|妖刀】哥哥的腰不是腰 是夺命的“妖”刀", "url": "https://b23.tv/kB8QeKz" }
+              ]
+            },
+            {
+              "id": "must-watch-vlog",
+              "title": "必看vlog",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "【Xlog Blue】“Lay”了吗？放轻松～", "url": "https://b23.tv/q9sGPXN" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴观察日记】老板绝绝子", "url": "https://b23.tv/5plB3OF" },
+                { "type": "link", "platform": "Bilibili", "title": "【Xlog Blue】炎炎夏日，玩水才是正经事～", "url": "https://www.bilibili.com/video/BV1rK4y197zQ" }
+              ]
+            },
+            {
+              "id": "cp-lay-xing",
+              "title": "cp只磕 Lay兴",
+              "children": [
+                { "type": "divider", "label": "2015年" },
+                { "type": "link", "platform": "Bilibili", "title": "【红兴】红玫瑰 白玫瑰【双重人格小绵羊】", "url": "https://b23.tv/BV1cs411274E" },
+                { "type": "divider", "label": "2016年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴·lay兴】【剧情向】Sex me slow（双向暗恋/小甜饼/一辆人力小三轮）", "url": "https://b23.tv/BV1cs411x72v" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【Lay兴】追随到你爱上我", "url": "https://b23.tv/BV1ts411a74h" },
+                { "type": "divider", "label": "2017年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】编号89757【请看简介】", "url": "https://b23.tv/BV1bs41187s3" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【LAY兴】论套路与反套路", "url": "https://b23.tv/BV1Sx41117y8" },
+                { "type": "link", "platform": "Bilibili", "title": "【慎】【张艺兴‖R20】【lay兴】25", "url": "https://b23.tv/BV16x411Y7qT" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴/LAY】【仙子堕落】【暗黑病娇】", "url": "https://b23.tv/BV1dx4115715" },
+                { "type": "divider", "label": "2018年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴/EG】|| 攻略直男计划", "url": "https://b23.tv/BV1cp411f7vi" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【禁区/暗黑病娇向】", "url": "https://b23.tv/BV1KW411c7i8" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【张艺兴生贺】【Lay兴】《险情》|废剪刀联萌出品", "url": "https://b23.tv/BV1vW41127ka" },
+                { "type": "divider", "label": "2019年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【黑·陷阱/年下反攻】【lay/兴】", "url": "https://b23.tv/BV1xt411z7zL" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【LAY兴/确认过眼神】", "url": "https://b23.tv/BV1Rt411W7cV" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【lay兴】情人节浪漫呈现——你是礼物", "url": "https://b23.tv/BV1Kb41167HX" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【lay兴】双重人格", "url": "https://b23.tv/BV1Jb41137SL" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】《非诚勿扰》l废剪刀联萌出品", "url": "https://b23.tv/BV1gx411d7p4" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【lay兴/我不好】伪MV‖愿你我在彼此看不到的岁月里，熠熠生辉", "url": "https://b23.tv/BV1AJ411K7JJ" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴/Lay兴】编号89757（剧情向）‖我属于你，没有期限", "url": "https://b23.tv/BV1bJ411T73V" },
+                { "type": "divider", "label": "2020年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴|Lay兴衍生】PDx唱作人||天才们的恋爱脑", "url": "https://b23.tv/BV1Aa4y1Y7q5" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴|lay兴衍生】PDx唱作人•我的布偶情人|双视角", "url": "https://b23.tv/BV1iZ4y1H7Zx" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】Lay兴 小明星和总裁都不怀好意的结果是？病娇 扮猪吃老虎系列", "url": "https://b23.tv/BV1yv411C7V1" }
+              ]
+            },
+            {
+              "id": "outfit-change",
+              "title": "一键换装",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】Lay u down一键换装精华混剪 催眠术让你扑朔迷离鼻血预定！", "url": "https://b23.tv/aJRKzi" }
+              ]
+            }
           ]
         },
         {
@@ -39,32 +202,114 @@
           "title": "莲乎",
           "intro": "“一个努力对抗风车的堂吉诃德。名利的洪流呼啸而过，他保持一点幼稚的火种逆行。我只是旁观也含泪。” —— 张棉被",
           "children": [
+            { "type": "link", "platform": "知乎", "title": "如何评价张艺兴", "url": "https://www.zhihu.com/question/33467311" }
+          ]
+        },
+        {
+          "id": "dd",
+          "title": "dd",
+          "children": [
             {
-              "type": "link",
-              "platform": "知乎",
-              "title": "如何评价张艺兴",
-              "url": "https://www.zhihu.com/question/33467311"
+              "id": "guiling",
+              "title": "归零",
+              "children": [
+                { "type": "link", "platform": "抖音", "title": "正片合集", "url": "https://v.douyin.com/MDj77Y7XbXE/" },
+                { "type": "link", "platform": "抖音", "title": "花絮合集", "url": "https://v.douyin.com/hwoBFeGs_cs/" }
+              ]
+            },
+            {
+              "id": "geini-new-card",
+              "title": "给你，我的新名片",
+              "children": [
+                { "type": "link", "platform": "抖音", "title": "第一期", "url": "https://v.douyin.com/xhQ7G6LPmLw/" }
+              ]
             }
           ]
         },
-        { "id": "dd", "title": "dd", "children": [] }
+        { "id": "wb", "title": "wb", "children": [] }
       ]
     },
     {
-      "id": "nickname-origin",
-      "title": "昵称由来",
+      "id": "together-days",
+      "title": "互相陪伴的日子",
       "color": "#BAAAC8",
       "children": [
-        { "id": "guogai", "title": "锅盖", "children": [] },
-        { "id": "lianmi", "title": "莲咪", "children": [] },
-        { "id": "baobao", "title": "宝宝", "children": [] },
-        { "id": "bob", "title": "bob", "children": [] }
+        {
+          "id": "nickname-origin",
+          "title": "昵称由来",
+          "children": [
+            {
+              "id": "baobao",
+              "title": "宝宝",
+              "children": [
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【这就是街舞】被贝壳们逗到害羞的宝宝也太可爱了 我们永远爱你呀 宝宝", "url": "https://www.bilibili.com/video/BV1k44y1v7Di/?spm_id_from=333.1387.favlist.content.click" }
+              ]
+            },
+            { "id": "bob", "title": "bob", "children": [] },
+            { "id": "lianmi", "title": "莲咪", "children": [] },
+            { "id": "lianlian", "title": "莲莲", "children": [] },
+            { "id": "little-sheep-fox", "title": "小绵羊，小狐狸", "children": [] },
+            { "id": "guogai", "title": "锅盖", "children": [] }
+          ]
+        },
+        { "id": "beike-nickname-origin", "title": "贝壳昵称由来", "children": [] },
+        { "id": "live-stream", "title": "直播", "children": [] },
+        { "id": "fan-meetings", "title": "见面会，签售会", "children": [] },
+        { "id": "other-fan-content", "title": "其他饭撒", "children": [] }
       ]
     },
     {
-      "id": "candy-english",
-      "title": "喜糖英语角",
+      "id": "beike-english-corner",
+      "title": "贝壳英语角",
       "color": "#D7C5D8",
+      "children": [
+        {
+          "id": "magazines",
+          "title": "杂志",
+          "children": [
+            { "type": "link", "platform": "媒体", "title": "Lay Zhang x L’officiel Hommes | Music is the absolute attraction", "url": "https://medium.com/@xingtweettrans1007/lay-zhang-x-lofficiel-hommes-music-is-the-absolute-attraction-6e17c65773c0" },
+            { "type": "link", "platform": "媒体", "title": "LAY ZHANG interview with Dazed China", "url": "https://xingtweettrans1007.medium.com/lay-zhang-interview-with-dazed-china-929aa976d985" },
+            { "type": "link", "platform": "媒体", "title": "The cover story: Lay Zhang — Music is ‘a lifetime career’", "url": "https://xingtweettrans1007.medium.com/the-cover-story-lay-zhang-music-is-a-lifetime-career-65503709d50f" },
+            { "type": "link", "platform": "媒体", "title": "Harper’s Bazaar Men December Cover figure | Lay Zhang: Break through", "url": "https://xingtweettrans1007.medium.com/harpers-bazaar-men-december-cover-figure-lay-zhang-break-through-62fa69c33f18" },
+            { "type": "link", "platform": "媒体", "title": "L’officiel March Cover Story: Lay Zhang — Transparent as always", "url": "https://xingtweettrans1007.medium.com/lofficiel-march-cover-story-lay-zhang-transparent-as-always-6a646770565c" },
+            { "type": "link", "platform": "媒体", "title": "Variety Nov/Dec issue cover figure/ Lay Zhang: The sober look", "url": "https://xingtweettrans1007.medium.com/variety-nov-dec-issue-cover-figure-lay-zhang-the-sober-look-65a9d65bbe4b" },
+            { "type": "link", "platform": "媒体", "title": "Cover Story / Lay Zhang: Myriad branches vie for spring", "url": "https://xingtweettrans1007.medium.com/cover-story-lay-zhang-myriad-branches-vie-for-spring-8fd793008ec3" }
+          ]
+        },
+        {
+          "id": "standing-tall-24",
+          "title": "而立24",
+          "children": [
+            { "type": "link", "platform": "媒体", "title": "而立24（一）", "url": "https://xingtweettrans1007.medium.com/standing-tall-at-24-321c2d8994d5" },
+            { "type": "link", "platform": "媒体", "title": "而立24（二）", "url": "https://medium.com/@xingtweettrans1007/standing-tall-at-24-41bf78e1a514" },
+            { "type": "link", "platform": "媒体", "title": "而立24（三）", "url": "https://medium.com/@xingtweettrans1007/standing-tall-at-24-192b21fa704f" },
+            { "type": "link", "platform": "媒体", "title": "而立24（四）", "url": "https://medium.com/@xingtweettrans1007/standing-tall-at-24-a4cee1f54c25" }
+          ]
+        },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: Idol has meanings that go beyond “entertainment”", "url": "https://xingtweettrans1007.medium.com/lay-zhang-idol-has-meanings-that-go-beyond-entertainment-fff7ee413ce2" },
+        { "type": "link", "platform": "媒体", "title": "48 hours of “Lay observation”, I have forgotten about “the little sheep”", "url": "https://xingtweettrans1007.medium.com/48-hours-of-lay-observation-i-have-forgotten-about-the-little-sheep-aa722ad545c7" },
+        { "type": "link", "platform": "媒体", "title": "FightClub China x Lay Zhang on Converse", "url": "https://xingtweettrans1007.medium.com/fightclub-china-x-lay-zhang-on-converse-e79de20c9f96" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang’s story behind “外婆” – Healing and Mourning through music", "url": "https://medium.com/@xingtweettrans1007/lay-zhangs-story-behind-外婆-healing-and-mourning-through-music-ad226ce26259" },
+        { "type": "link", "platform": "媒体", "title": "Concepts behind Lay Zhang’s 4th album LIT", "url": "https://xingtweettrans1007.medium.com/concepts-behind-lay-zhangs-4th-album-lit-bbb6075d673d" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: You can laugh at me, but don’t laugh at hard-working", "url": "https://xingtweettrans1007.medium.com/lay-zhang-you-can-laugh-at-me-but-dont-laugh-at-hard-working-b381f5a15194" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang offstage: Street Dance of China 3 and more", "url": "https://xingtweettrans1007.medium.com/lay-zhang-offstage-street-dance-of-china-3-and-more-cefdf444bcc0" },
+        { "type": "link", "platform": "媒体", "title": "Interpreting the new “Producer” era of Lay Zhang", "url": "https://xingtweettrans1007.medium.com/interpreting-the-new-producer-era-of-lay-zhang-4ffb37e28e00" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang exclaims that Chromosome’s 14-year-old trainees are already 6 feet tall: “They have GOOD nutrition supplies”", "url": "https://xingtweettrans1007.medium.com/lay-zhang-exclaims-that-chromosomes-14-year-old-trainees-are-already-6-feet-tall-they-have-good-fcaaf7239e76" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: Relax, get your balance in control", "url": "https://xingtweettrans1007.medium.com/lay-zhang-relax-get-your-balance-in-control-31b068cdf473" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: Taking every step steadily to becoming a good actor", "url": "https://xingtweettrans1007.medium.com/lay-zhang-taking-every-step-steadily-to-becoming-a-good-actor-2a1eca8e3a56" },
+        { "type": "link", "platform": "媒体", "title": "LAY ZHANG x NEW Weekly — The Interview", "url": "https://xingtweettrans1007.medium.com/lay-zhang-x-new-weekly-the-interview-7ad731cf01c0" },
+        { "type": "link", "platform": "媒体", "title": "LAY Zhang x New Weekly — ON AND OFF STAGE", "url": "https://xingtweettrans1007.medium.com/lay-zhang-x-new-weekly-on-and-off-stage-82c4b884c9a9" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang - The Good Man", "url": "https://xingtweettrans1007.medium.com/lay-zhang-the-good-man-bca9f1587939" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: The ‘krumper’ of time, using the ‘art of fusion’ to let the world looks toward the East", "url": "https://xingtweettrans1007.medium.com/lay-zhang-the-krumper-of-time-using-the-art-of-fusion-to-let-the-world-looks-toward-the-east-d70be2c18e4f" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: The Practitioner of Idealism", "url": "https://xingtweettrans1007.medium.com/lay-zhang-the-practitioner-of-idealism-64091a9dae75" },
+        { "type": "link", "platform": "媒体", "title": "Lay Zhang: Making Our Ancestors’ Treasures Trendy", "url": "https://xingtweettrans1007.medium.com/lay-zhang-making-our-ancestors-treasures-trendy-e6163f995ef9" },
+        { "type": "link", "platform": "媒体", "title": "“WEST” FULL EP Lyrics translation", "url": "https://xingtweettrans1007.medium.com/west-full-ep-lyrics-translation-a23db7ac48ff" }
+      ]
+    },
+    {
+      "id": "charity",
+      "title": "公益",
+      "color": "#DAD4DF",
       "children": []
     },
     {
@@ -75,7 +320,10 @@
         { "id": "brightstar-weibo", "title": "Brightstar 微博", "children": [] },
         { "id": "qixi-weibo", "title": "气息微博", "children": [] },
         { "id": "lianfen-yougeng", "title": "#莲粉 有梗#", "children": [] },
-        { "id": "hongdoushan", "title": "张艺兴红豆山", "children": [] }
+        { "id": "hongdoushan", "title": "张艺兴红豆山", "children": [] },
+        { "type": "link", "platform": "小红书", "title": "张艺兴｜入坑/考古 官方——图2【帮助获取信息...", "url": "https://xhslink.cn/o/1YlJf566scS" },
+        { "type": "link", "platform": "Bilibili", "title": "一个全面的张艺兴，您了解过吗，他是否被低估了（绝对惊掉您下巴，认真看保夜夜笙歌）", "url": "https://www.bilibili.com/opus/376604555246383751?spm_id_from=333.1387.0.0" },
+        { "id": "beautiful-photos", "title": "美图汇总", "children": [] }
       ]
     }
   ]
