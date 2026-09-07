@@ -1,3 +1,4 @@
 .wrangler/
 node_modules/
 PROJECT_HANDOFF.md
+*.docx
