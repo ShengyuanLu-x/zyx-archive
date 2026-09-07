@@ -32,7 +32,9 @@ function platformBadgeHtml(platform) {
 }
 
 async function fetchJson(url) {
-  const res = await fetch(url);
+  // cache: "no-cache" 会让浏览器每次都跟服务器确认一下内容有没有变，
+  // 而不是直接用很久以前缓存的旧版本 —— 保证你更新完资料后，访问者不用手动刷新也能看到最新内容。
+  const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) {
     throw new Error(`无法加载 ${url}（状态码 ${res.status}）`);
   }
