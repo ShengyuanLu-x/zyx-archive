@@ -1,9 +1,21 @@
 {
-  "id": "other-stage-2019-tmall",
-  "title": "2019天猫双十一狂欢夜舞台",
+  "id": "other-stage-2019",
+  "title": "2019年其他舞台",
   "date": "2019-01-01",
   "summary": "",
   "materials": [
+    {
+      "category": "正式内容",
+      "platform": "Bilibili",
+      "title": "【张艺兴】《》《》有内味儿了",
+      "url": "https://www.bilibili.com/video/BV16J411S73j"
+    },
+    {
+      "category": "其他",
+      "platform": "Bilibili",
+      "title": "Cr 76 饭拍补丁",
+      "url": "https://www.bilibili.com/video/BV1kJ411S79B?spm_id_from=333.788.videopod.episodes&vd_source=53b81bf835835cf99b61f02aa0ab2529&p=2"
+    },
     {
       "category": "正式内容",
       "platform": "Bilibili",

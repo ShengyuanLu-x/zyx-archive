@@ -218,11 +218,7 @@
                 },
                 {
                   "type": "event",
-                  "eventId": "other-stage-2019-youweiwer"
-                },
-                {
-                  "type": "event",
-                  "eventId": "other-stage-2019-tmall"
+                  "eventId": "other-stage-2019"
                 }
               ]
             }
