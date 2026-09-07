@@ -60,13 +60,26 @@ async function renderChildCard(child, accentColor) {
       </a>`;
   }
 
-  // 普通分类节点（文件夹）：如果这个节点自己定义了颜色（比如顶层 5 个大 tab），优先用它自己的颜色
-  const count = (child.children || []).length;
+  // 普通分类节点（文件夹）：如果这个节点自己定义了颜色（比如顶层大 tab），优先用它自己的颜色，
+  // 并且首页大 tab 卡片显示"这里面有哪些小分类"的预览文字，而不是"共几项"
+  const children = child.children || [];
+  const count = children.length;
   const cardColor = child.color || accentColor;
+  const isTopTab = Boolean(child.color);
+
+  let secondLineHtml;
+  if (isTopTab) {
+    const names = children.map((c) => c.title || c.label).filter(Boolean);
+    const preview = names.slice(0, 4).join("，") + (names.length > 4 ? " 等" : "");
+    secondLineHtml = `<div class="node-card-preview">${escapeHtml(preview || "暂无内容")}</div>`;
+  } else {
+    secondLineHtml = `<div class="node-card-count">${count > 0 ? `${count} 项` : "暂无内容"}</div>`;
+  }
+
   return `
     <a class="node-card folder-card" href="category.html?id=${encodeURIComponent(child.id)}" style="--accent:${cardColor}">
       <div class="node-card-title">${escapeHtml(child.title)}</div>
-      <div class="node-card-count">${count > 0 ? `${count} 项` : "暂无内容"}</div>
+      ${secondLineHtml}
     </a>`;
 }
 

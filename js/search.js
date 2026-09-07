@@ -7,8 +7,10 @@ let searchIndexPromise = null;
 async function buildSearchIndex() {
   const nav = await loadNav();
   const records = [];
+  const eventRefs = []; // 收集所有要拉取的事件文件，最后一次性并发请求，不逐个排队
 
-  async function walk(node, crumbs) {
+  // 第一遍：只做同步的事情（读 nav.json 里已经有的内容），不等待任何网络请求
+  function walk(node, crumbs) {
     if (node.id) {
       records.push({
         title: node.title,
@@ -22,28 +24,7 @@ async function buildSearchIndex() {
 
     for (const child of node.children || []) {
       if (child.type === "event") {
-        try {
-          const ev = await fetchJson(`data/events/${child.eventId}.json`);
-          const crumbText = newCrumbs.map((c) => c.title).join(" › ");
-          records.push({
-            title: ev.title,
-            subtitle: crumbText,
-            href: `event.html?id=${encodeURIComponent(ev.id)}`,
-            external: false,
-            keywords: `${ev.title} ${ev.summary || ""}`.toLowerCase(),
-          });
-          for (const m of ev.materials || []) {
-            records.push({
-              title: m.title || "(未命名链接)",
-              subtitle: `${crumbText} › ${ev.title} · ${m.platform || ""}`,
-              href: m.url,
-              external: true,
-              keywords: `${m.title || ""} ${m.platform || ""} ${ev.title}`.toLowerCase(),
-            });
-          }
-        } catch (err) {
-          console.warn("搜索索引：事件加载失败", child.eventId, err);
-        }
+        eventRefs.push({ eventId: child.eventId, crumbText: newCrumbs.map((c) => c.title).join(" › ") });
       } else if (child.type === "link") {
         const crumbText = newCrumbs.map((c) => c.title).join(" › ");
         records.push({
@@ -53,13 +34,46 @@ async function buildSearchIndex() {
           external: true,
           keywords: `${child.title || ""} ${child.platform || ""}`.toLowerCase(),
         });
-      } else {
-        await walk(child, newCrumbs);
+      } else if (child.type !== "divider") {
+        walk(child, newCrumbs);
       }
     }
   }
 
-  await walk(rootNode(nav), []);
+  walk(rootNode(nav), []);
+
+  // 第二遍：所有事件文件一次性并发请求（而不是一个个排队），事件越多也不会让搜索变慢
+  const eventRecordLists = await Promise.all(
+    eventRefs.map(async ({ eventId, crumbText }) => {
+      try {
+        const ev = await fetchJson(`data/events/${eventId}.json`);
+        const list = [
+          {
+            title: ev.title,
+            subtitle: crumbText,
+            href: `event.html?id=${encodeURIComponent(ev.id)}`,
+            external: false,
+            keywords: `${ev.title} ${ev.summary || ""}`.toLowerCase(),
+          },
+        ];
+        for (const m of ev.materials || []) {
+          list.push({
+            title: m.title || "(未命名链接)",
+            subtitle: `${crumbText} › ${ev.title} · ${m.platform || ""}`,
+            href: m.url,
+            external: true,
+            keywords: `${m.title || ""} ${m.platform || ""} ${ev.title}`.toLowerCase(),
+          });
+        }
+        return list;
+      } catch (err) {
+        console.warn("搜索索引：事件加载失败", eventId, err);
+        return [];
+      }
+    })
+  );
+
+  for (const list of eventRecordLists) records.push(...list);
   return records;
 }
 
