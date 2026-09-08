@@ -117,7 +117,7 @@
 先后部署了两套，目前香港 VPS 是主力测试地址，Cloudflare 保留做对照：
 
 - **Cloudflare Workers**：https://zyx-archive.syluxback.workers.dev ，连接 GitHub 自动部署（push 到 main 自动重新发布），依赖仓库里的 wrangler.jsonc 和 .assetsignore 两个配置文件。**实测结论：中国大陆用户访问这个地址不理想**，这是转向香港 VPS 的直接原因
-- **CMIVPS 香港 VPS（正式测试地址）**：https://archiveoflay.com （及 https://www.archiveoflay.com），服务器 IP 223.26.61.154，Ubuntu 24.04，套餐 HK.KVM.1C1G，$5/月，标注"China Friendly CN2 Network"。选它的原因：用户没有大陆身份证/护照无法完成腾讯云/阿里云国内站的强制实名认证，国际站又不保障对大陆的网络质量，CMIVPS 这类中小型服务商不需要实名且专门优化大陆连接。域名 `archiveoflay.com` 在 Namecheap 注册，DNS 用 Namecheap 自带的 BasicDNS，两条 A 记录（`@` 和 `www`）都指向服务器 IP。HTTPS 证书用 Let's Encrypt（certbot）签发，已设置系统定时任务自动续期，到期日 2026-11-29（会自动续，不用管）。服务器上部署了 Nginx 提供 /var/www/zyx-archive（GitHub 仓库的 clone），有一个每 5 分钟自动 git pull 的定时任务保持同步，防火墙只放行了 22/80/443。**具体登录方式/密钥位置等运维细节问用户本人**（不写在这份公开文档里）
+- **CMIVPS 香港 VPS（正式测试地址）**：https://archiveoflay.com （及 https://www.archiveoflay.com），服务器 IP 223.26.61.154，Ubuntu 24.04，套餐 HK.KVM.1C1G，$5/月，标注"China Friendly CN2 Network"。选它的原因：用户没有大陆身份证/护照无法完成腾讯云/阿里云国内站的强制实名认证，国际站又不保障对大陆的网络质量，CMIVPS 这类中小型服务商不需要实名且专门优化大陆连接。域名 `archiveoflay.com` 在 Namecheap 注册，DNS 用 Namecheap 自带的 BasicDNS，两条 A 记录（`@` 和 `www`）都指向服务器 IP。HTTPS 证书用 Let's Encrypt（certbot）签发，已设置系统定时任务自动续期，到期日 2026-11-29（会自动续，不用管）。服务器上部署了 Nginx 提供 /var/www/zyx-archive（GitHub 仓库的 clone），有一个每 5 分钟自动 git pull 的定时任务保持同步，防火墙只放行了 22/80/443。Nginx 还给 `.html`/`.js`/`.css` 这几类文件加了 `Cache-Control: no-cache`（2026-09-07，排查"电脑上显示的是改版前的旧样式，手机是对的"这个问题时加的——浏览器缓存了旧的代码文件，跟数据文件是两回事，`data/*.json` 那类请求早就在 `js/common.js` 里加了 `{cache:"no-cache"}`，但代码文件本身当时没处理）。**具体登录方式/密钥位置等运维细节问用户本人**（不写在这份公开文档里）
 
 ## 五、还没做完 / 需要用户确认的事
 
