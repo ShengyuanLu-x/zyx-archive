@@ -10,7 +10,7 @@
     {
       "id": "comprehensive",
       "title": "综合",
-      "color": "#D0CBE3",
+      "color": "#3D3267",
       "children": [
         {
           "id": "stage-god",
@@ -454,7 +454,7 @@
     {
       "id": "cross-platform",
       "title": "跨越平台",
-      "color": "#9997BF",
+      "color": "#3A3861",
       "children": [
         {
           "id": "jiashuai-era",
@@ -873,7 +873,7 @@
     {
       "id": "together-days",
       "title": "互相陪伴的日子",
-      "color": "#BAAAC8",
+      "color": "#4E3A5F",
       "children": [
         {
           "id": "nickname-origin",
@@ -969,7 +969,7 @@
     {
       "id": "beike-english-corner",
       "title": "贝壳英语角",
-      "color": "#D7C5D8",
+      "color": "#5C3B5E",
       "children": [
         {
           "id": "magazines",
@@ -1162,13 +1162,13 @@
     {
       "id": "charity",
       "title": "公益",
-      "color": "#DAD4DF",
+      "color": "#4E4059",
       "children": []
     },
     {
       "id": "archive-summary",
       "title": "考古汇总",
-      "color": "#ABC1C7",
+      "color": "#3B575E",
       "children": [
         {
           "id": "brightstar-weibo",
