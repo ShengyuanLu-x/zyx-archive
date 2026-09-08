@@ -1,6 +1,13 @@
 {
   "tabs": [
     {
+      "id": "tribute",
+      "title": "Archive of Lay",
+      "subtitle": "珍藏我们走过的岁月",
+      "hero": true,
+      "children": []
+    },
+    {
       "id": "comprehensive",
       "title": "综合",
       "color": "#D0CBE3",

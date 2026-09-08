@@ -31,8 +31,8 @@ async function renderChildCard(child, accentColor) {
         <a class="node-card event-card-mini" href="event.html?id=${encodeURIComponent(ev.id)}">
           <div class="node-card-kicker">事件</div>
           <div class="node-card-title">${escapeHtml(ev.title)}</div>
-          <div class="node-card-date">${escapeHtml(ev.date)}</div>
-          <div class="node-card-desc">${escapeHtml(ev.summary || "")}</div>
+          ${ev.summary ? `<div class="node-card-desc">${escapeHtml(ev.summary)}</div>` : ""}
+          <div class="node-tag">${escapeHtml(ev.date || "日期未知")}</div>
         </a>`;
     } catch (err) {
       return `<div class="node-card node-card-error">事件加载失败：${escapeHtml(child.eventId)}</div>`;
@@ -71,9 +71,9 @@ async function renderChildCard(child, accentColor) {
   if (isTopTab) {
     const names = children.map((c) => c.title || c.label).filter(Boolean);
     const preview = names.slice(0, 4).join("，") + (names.length > 4 ? " 等" : "");
-    secondLineHtml = `<div class="node-card-preview">${escapeHtml(preview || "暂无内容")}</div>`;
+    secondLineHtml = `<div class="node-tag">${escapeHtml(preview || "暂无内容")}</div>`;
   } else {
-    secondLineHtml = `<div class="node-card-count">${count > 0 ? `${count} 项` : "暂无内容"}</div>`;
+    secondLineHtml = `<div class="node-tag">${count > 0 ? `${count} 项` : "暂无内容"}</div>`;
   }
 
   return `
@@ -112,8 +112,23 @@ async function renderNavPage() {
       introEl.remove();
     }
 
-    const children = current.children || [];
+    let children = current.children || [];
     const gridEl = document.getElementById("node-grid");
+
+    // 首页顶部的大 banner：只在根目录（index.html）渲染，来自 nav.json 里 hero:true 的那个节点，
+    // 渲染完之后要把它从下面的普通网格里去掉，不然会重复出现一次小卡片
+    const heroSlot = document.getElementById("hero-banner-slot");
+    if (heroSlot && !id) {
+      const heroNode = children.find((c) => c.hero);
+      if (heroNode) {
+        heroSlot.innerHTML = `
+          <a class="hero-banner" href="category.html?id=${encodeURIComponent(heroNode.id)}">
+            <div class="hero-banner-title">${escapeHtml(heroNode.title)}</div>
+            <div class="hero-banner-subtitle">${escapeHtml(heroNode.subtitle || "")}</div>
+          </a>`;
+        children = children.filter((c) => c !== heroNode);
+      }
+    }
 
     if (children.length === 0) {
       gridEl.innerHTML = `<p class="empty-hint">这里还没有资料，敬请期待。</p>`;

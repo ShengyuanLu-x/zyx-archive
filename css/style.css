@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&display=swap");
+
 :root {
-  --bg: #312a44;
-  --surface: #453c5c;
-  --surface-2: #3b3350;
-  --border: #574c73;
-  --text: #ece7f5;
-  --muted: #b6acd0;
+  --bg: #0b0a10;
+  --surface: #1d1828;
+  --surface-2: #251f32;
+  --border: #352e42;
+  --text: #f1ecf7;
+  --muted: #a99dc4;
   --accent: #d0cbe3;
+  --tag-bg: #d8d3e0;
+  --tag-text: #14111b;
 }
 
 * {
@@ -178,6 +182,49 @@ main {
   line-height: 1.7;
 }
 
+/* 首页顶部大 banner（Archive of Lay 纪念专区入口） */
+.hero-banner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 40px 24px 30px;
+  margin: 4px 0 18px;
+  text-decoration: none;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(216, 211, 224, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(151, 130, 189, 0.4), transparent 50%),
+    linear-gradient(150deg, #2c2444 0%, #463a68 55%, #6c5a8f 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.15s ease;
+}
+
+.hero-banner:active {
+  transform: scale(0.99);
+}
+
+.hero-banner-title {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-shadow: 0 2px 18px rgba(180, 160, 220, 0.55);
+}
+
+.hero-banner-subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #e4dcf2;
+  letter-spacing: 0.04em;
+}
+
+.hero-banner-tag {
+  display: inline-block;
+  margin-top: 16px;
+}
+
 /* 目录网格：分类卡片 / 事件卡片 / 链接卡片 */
 .node-grid {
   display: flex;
@@ -213,17 +260,17 @@ main {
   font-weight: 700;
 }
 
-.folder-card .node-card-count {
-  font-size: 12.5px;
-  color: #55486f;
-  margin-top: 2px;
-}
-
-.folder-card .node-card-preview {
-  font-size: 12.5px;
-  color: #55486f;
-  margin-top: 2px;
-  line-height: 1.5;
+.node-tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-top: 8px;
+  line-height: 1.4;
+  max-width: 100%;
 }
 
 /* 事件卡片（迷你版，用在分类页里） */
