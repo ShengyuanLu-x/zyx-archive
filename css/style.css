@@ -248,9 +248,18 @@ main {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-/* 分类/子 tab 卡片：用该大类的浅色主题色打底 */
+/* 分类/子 tab 卡片：用该大类的主题色做成一个渐变（跟首页大 banner 是同一套手法：
+   左上角一点高光 + 左浅右深的斜向渐变），只需要 nav.json 里配一个 color 就会自动生成，
+   不需要给每个分类手动调渐变色值 */
 .folder-card {
-  background: var(--accent, var(--surface));
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.55), transparent 42%),
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent, var(--surface)) 100%, white 30%) 0%,
+      var(--accent, var(--surface)) 55%,
+      color-mix(in srgb, var(--accent, var(--surface)) 100%, black 14%) 100%
+    );
   color: #2c2440;
   border: none;
 }
