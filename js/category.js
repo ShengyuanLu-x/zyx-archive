@@ -61,18 +61,33 @@ async function renderChildCard(child, accentColor) {
   }
 
   // 普通分类节点（文件夹）：如果这个节点自己定义了颜色（比如顶层大 tab），优先用它自己的颜色。
-  // 卡片下面第二行：如果这个节点下面全是"小分类"（文件夹），就像首页大 tab 一样列出小分类的名字；
-  // 如果下面直接放的是事件/链接（没有再分子分类），就还是显示"共几项"
+  // 卡片下面第二行：只要这个节点下面有至少一个"小分类"（文件夹），就列出预览名字（文件夹用标题，
+  // 事件用年份，链接用标题），跟首页大 tab 一个逻辑；如果下面全是事件/链接（没有任何子分类），
+  // 就还是显示"共几项"
   const children = child.children || [];
   const count = children.length;
   const cardColor = child.color || accentColor;
   const subFolders = children.filter((c) => !c.type);
-  const isCategoryOfCategories = subFolders.length > 0 && subFolders.length === children.length;
+  const hasSubCategories = subFolders.length > 0;
 
   let secondLineHtml;
-  if (isCategoryOfCategories) {
-    const names = subFolders.map((c) => c.title || c.label).filter(Boolean);
-    const preview = names.slice(0, 4).join("，") + (names.length > 4 ? " 等" : "");
+  if (hasSubCategories) {
+    const names = [];
+    for (const c of children) {
+      if (c.type === "divider") continue;
+      if (c.type === "event") {
+        try {
+          const ev = await fetchJson(`data/events/${c.eventId}.json`);
+          names.push((ev.date || "").slice(0, 4) || ev.title || "");
+        } catch (err) {
+          // 单个事件加载失败不影响预览文字的其余部分
+        }
+        continue;
+      }
+      names.push(c.title || c.label || "");
+    }
+    const filtered = names.filter(Boolean);
+    const preview = filtered.slice(0, 4).join("，") + (filtered.length > 4 ? " 等" : "");
     secondLineHtml = `<div class="node-tag">${escapeHtml(preview || "暂无内容")}</div>`;
   } else {
     secondLineHtml = `<div class="node-tag">${count > 0 ? `${count} 项` : "暂无内容"}</div>`;
