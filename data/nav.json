@@ -349,7 +349,31 @@
             {
               "id": "gen-zheng-miao-hong",
               "title": "根正苗红",
-              "children": []
+              "children": [
+                { "type": "divider", "label": "2026年" },
+                { "type": "link", "platform": "Bilibili", "title": "从1919到2026，百年风华赓续。中国青年，向来心怀赤诚、志存高远，于风雨中挺立脊梁，于时代里勇担使命。薪火相传，笃行不怠，吾辈当自强。", "url": "https://www.bilibili.com/video/BV1dkRPBrEkM/" },
+                { "type": "divider", "label": "2025年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴 X 舞台】《精忠报国》“何以中国闽山闽水物华新”网络主题宣传活动舞台丨时隔八年重温经典，歌声如剑气震山河", "url": "https://www.bilibili.com/video/BV1Rb5QzsEA4/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】来贺党全体起立！时隔八年再唱《精忠报国》【250421】", "url": "https://www.bilibili.com/video/BV1vf51z6EYq/" },
+                { "type": "divider", "label": "2023年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴 | 音乐】航天局X新华社 联手打造航天歌曲《星星海》", "url": "https://www.bilibili.com/video/BV1io4y157nQ/" },
+                { "type": "divider", "label": "2022年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴Ｘ舞台】《奋斗的你了不起》——《中国梦·劳动美——2022五·一国际劳动节“心连心”特别节目》", "url": "https://www.bilibili.com/video/BV1WT4y1k72T/" },
+                { "type": "link", "platform": "Bilibili", "title": "五四青年节的前一天，分享一首歌", "url": "https://www.bilibili.com/video/BV1rF411T7c4/" },
+                { "type": "divider", "label": "2021年" },
+                { "type": "link", "platform": "Bilibili", "title": "张艺兴演唱《七子之歌》献礼百年华诞，愿党青春永驻，愿祖国繁荣昌盛。", "url": "https://www.bilibili.com/video/BV12g411M7zL/" },
+                { "type": "link", "platform": "Bilibili", "title": "【星火】百年风华，青春中国，这首歌全程高燃！", "url": "https://www.bilibili.com/video/BV1Uv411H7ck/" },
+                { "type": "link", "platform": "Bilibili", "title": "高燃！这些面孔刻画出中国模样", "url": "https://www.bilibili.com/video/BV1vS4y1d7Je/" },
+                { "type": "link", "platform": "Bilibili", "title": "【高燃】张艺兴《不屈的信仰》，献唱电影《我们是第一书记》", "url": "https://www.bilibili.com/video/BV1Bh41147Zy/" },
+                { "type": "divider", "label": "2019年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【五四晚会】《中国功夫》+《沧海一声笑》cut及完整版", "url": "https://www.bilibili.com/video/BV1g4411i7cz/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】《青春颂(男生版)》MV", "url": "https://www.bilibili.com/video/BV1E4411j7Uh/" },
+                { "type": "divider", "label": "2018年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】公益电影《我在你身边》主题曲《一切如你》MV", "url": "https://www.bilibili.com/video/BV1BW411q7Yw/" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】《红旗飘飘》丨2018筑梦新时代“五月的鲜花”文艺会演", "url": "https://www.bilibili.com/video/BV13W411G7dp/" },
+                { "type": "divider", "label": "2017年" },
+                { "type": "link", "platform": "Bilibili", "title": "【张艺兴】歌曲《精忠报国》及五四青年节《五月的鲜花》文艺汇演相关采访", "url": "https://www.bilibili.com/video/BV1cx411m7s1/" }
+              ]
             },
             {
               "id": "music-other",
@@ -559,12 +583,29 @@
           "id": "dream-unwavering",
           "title": "梦想，矢志不渝",
           "children": [
-            {
-              "type": "link",
-              "platform": "Bilibili",
-              "title": "「爆哭预警」成功的来时路永远比想象的更艰难，张艺兴值得，值得",
-              "url": "https://b23.tv/Xw7rx4f"
-            }
+            { "type": "divider", "label": "2026年" },
+            { "type": "link", "platform": "Bilibili", "title": "「爆哭预警」成功的来时路永远比想象的更艰难，张艺兴值得，值得", "url": "https://b23.tv/Xw7rx4f" },
+            { "type": "divider", "label": "2023年" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】大航海3南京演唱会新歌《Breathe》<呼吸>", "url": "https://www.bilibili.com/video/BV1K84y1Q7uQ/" },
+            { "type": "link", "platform": "Bilibili", "title": "【锐评】格莱美博物馆更新张艺兴介绍：中国第一偶像，时尚缪斯", "url": "https://www.bilibili.com/video/BV1JY411Y7iT/" },
+            { "type": "link", "platform": "Bilibili", "title": "张艺兴｜野心 只有他在这个时代还能高呼梦想", "url": "https://www.bilibili.com/video/BV1YH4y117eU/" },
+            { "type": "divider", "label": "2022年" },
+            { "type": "link", "platform": "Bilibili", "title": "张艺兴哈佛专场分享会 最后一段谈梦想 听得我热血沸腾 疯狂落泪", "url": "https://www.bilibili.com/video/BV13Y411d7aA/" },
+            { "type": "link", "platform": "Bilibili", "title": "哈佛中西文化艺术交流【张艺兴】专场全程", "url": "https://www.bilibili.com/video/BV1C24y117Rj/" },
+            { "type": "divider", "label": "2021年" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】孤勇者｜“你将造你的城邦 在废墟之上”", "url": "https://www.bilibili.com/video/BV1Br4y1D7Zw/" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【考研|高考】【鼓励 励志向】人生如逆旅，我亦是行人。", "url": "https://www.bilibili.com/video/BV1Li4y1K7gv/" },
+            { "type": "link", "platform": "Bilibili", "title": "张艺兴谈创作歌舞《画卷》：想把中国民乐用到巅峰", "url": "https://www.bilibili.com/video/BV1YU4y1W7CB/" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】原来2014年张艺兴就说了要带领华语音乐走向世界！内娱理想主义实干家～如果你给我一个机会，我能撼动世界，你愿意给我这个机会吗｜十年一梦 星辰大海", "url": "https://www.bilibili.com/video/BV1qV411i7Vo/" },
+            { "type": "divider", "label": "2020年" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】玫瑰少年//最好的 报复是 美丽 最美的 盛开是 反击", "url": "https://www.bilibili.com/video/BV1WE411377f/" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴】【钓系美人】‖莲学‖直男斩‖【心动挑战】‖看看比茶艺更高段位的莲学？漫不经心弱不禁风的莲老师让学生党受益匪浅！‖", "url": "https://www.bilibili.com/video/BV1Ut4y1U7uX/" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴|励志向|高能踩点】暗夜——黑暗中征伐，黑夜中绽放", "url": "https://www.bilibili.com/video/BV1f7411s7k8/" },
+            { "type": "link", "platform": "Bilibili", "title": "【日月】张艺兴《莲》专辑乐评：如何定义中国风与M-Pop？华语音乐能走出去吗？", "url": "https://www.bilibili.com/video/BV1D5411W7yq/" },
+            { "type": "divider", "label": "2018年" },
+            { "type": "link", "platform": "Bilibili", "title": "【张艺兴X起风了】以爱之名，你还愿意吗？‖ 1007生贺", "url": "https://www.bilibili.com/video/BV1BW41127SY/" },
+            { "type": "divider", "label": "2015年" },
+            { "type": "link", "platform": "Bilibili", "title": "【FANVID】张艺兴 灿烂千阳（I LIVED）", "url": "https://www.bilibili.com/video/BV1qs411D7rF/" }
           ]
         }
       ]
