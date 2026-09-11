@@ -60,16 +60,18 @@ async function renderChildCard(child, accentColor) {
       </a>`;
   }
 
-  // 普通分类节点（文件夹）：如果这个节点自己定义了颜色（比如顶层大 tab），优先用它自己的颜色，
-  // 并且首页大 tab 卡片显示"这里面有哪些小分类"的预览文字，而不是"共几项"
+  // 普通分类节点（文件夹）：如果这个节点自己定义了颜色（比如顶层大 tab），优先用它自己的颜色。
+  // 卡片下面第二行：如果这个节点下面全是"小分类"（文件夹），就像首页大 tab 一样列出小分类的名字；
+  // 如果下面直接放的是事件/链接（没有再分子分类），就还是显示"共几项"
   const children = child.children || [];
   const count = children.length;
   const cardColor = child.color || accentColor;
-  const isTopTab = Boolean(child.color);
+  const subFolders = children.filter((c) => !c.type);
+  const isCategoryOfCategories = subFolders.length > 0 && subFolders.length === children.length;
 
   let secondLineHtml;
-  if (isTopTab) {
-    const names = children.map((c) => c.title || c.label).filter(Boolean);
+  if (isCategoryOfCategories) {
+    const names = subFolders.map((c) => c.title || c.label).filter(Boolean);
     const preview = names.slice(0, 4).join("，") + (names.length > 4 ? " 等" : "");
     secondLineHtml = `<div class="node-tag">${escapeHtml(preview || "暂无内容")}</div>`;
   } else {
