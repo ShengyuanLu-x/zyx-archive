@@ -206,7 +206,38 @@
                 {
                   "id": "tour-new-year-concert",
                   "title": "跨年演唱会",
-                  "children": []
+                  "children": [
+                    {
+                      "type": "link",
+                      "platform": "Bilibili",
+                      "title": "【张艺兴】251231染色体家族跨年演唱会张艺兴全程4K横屏 cr：补丁76",
+                      "url": "https://b23.tv/6c19KjH"
+                    }
+                  ]
+                },
+                {
+                  "id": "tour-douzhan-shengfo",
+                  "title": "斗战胜佛限定演唱会",
+                  "children": [
+                    {
+                      "type": "link",
+                      "platform": "Bilibili",
+                      "title": "【张艺兴 X 斗战胜佛】《阿尺木刮》完整舞台（艺兴亲剪）",
+                      "url": "https://b23.tv/b1CcPBV"
+                    },
+                    {
+                      "type": "link",
+                      "platform": "Bilibili",
+                      "title": "【张艺兴 X 斗战胜佛】幕后花絮｜澳门限定演唱会",
+                      "url": "https://b23.tv/S63aZ3g"
+                    },
+                    {
+                      "type": "link",
+                      "platform": "微博",
+                      "title": "美图 cr mylovelayonu",
+                      "url": "https://weibo.com/5233171153/5336638830151323"
+                    }
+                  ]
                 }
               ]
             },
@@ -237,6 +268,12 @@
           "children": [
             {
               "type": "link",
+              "platform": "秒拍",
+              "title": "采访片段（标题待补充）",
+              "url": "http://miaopai.com/show/0KPxYh9MnvA3k1fHOo8CEfYpSl8HyAkoLDGwmg__.htm"
+            },
+            {
+              "type": "link",
               "platform": "Bilibili",
               "title": "精神状态有种活着活着就偷着疯了的美感",
               "url": "https://www.bilibili.com/video/BV1Vr421W7N5?"
@@ -249,7 +286,7 @@
           "children": [
             {
               "id": "first-child",
-              "title": "一胎",
+              "title": "一胎《Lose Control》",
               "children": []
             },
             {
@@ -290,7 +327,14 @@
             {
               "id": "dou-zhan-sheng-fo",
               "title": "斗战胜佛",
-              "children": []
+              "children": [
+                {
+                  "type": "link",
+                  "platform": "小红书",
+                  "title": "外网粉丝为《斗战胜佛》写千字英文长乐评",
+                  "url": "https://xhslink.cn/o/1RC3Lx13BSA"
+                }
+              ]
             },
             {
               "id": "brand-songs",
@@ -319,54 +363,101 @@
           "title": "百亿影帝",
           "children": [
             {
-              "id": "silent-love",
-              "title": "不说话的爱",
-              "children": []
+              "id": "movies",
+              "title": "电影",
+              "children": [
+                {
+                  "id": "kungfu-football",
+                  "title": "功夫女足",
+                  "intro": "饰演：徐风（师叔公）· 2026年上映",
+                  "children": []
+                },
+                {
+                  "id": "silent-love",
+                  "title": "不说话的爱",
+                  "intro": "饰演：小马 · 2025年上映",
+                  "children": []
+                },
+                {
+                  "id": "legend",
+                  "title": "传说",
+                  "intro": "饰演：王靖/华峻 · 2024年上映",
+                  "children": []
+                },
+                {
+                  "id": "changsha-nightlife",
+                  "title": "长沙夜生活",
+                  "intro": "饰演：何岸 · 2023年上映",
+                  "children": []
+                },
+                {
+                  "id": "all-in",
+                  "title": "孤注一掷",
+                  "intro": "饰演：潘生 · 2023年上映",
+                  "children": []
+                },
+                {
+                  "id": "a-good-show",
+                  "title": "一出好戏",
+                  "intro": "饰演：马小兴 · 2018年上映",
+                  "children": [
+                    {
+                      "type": "link",
+                      "platform": "知乎",
+                      "title": "如何评价张艺兴在电影《一出好戏》里的表现？燕之的回答",
+                      "url": "https://www.zhihu.com/question/289478103/answer/468173265"
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-files-2",
+                  "title": "前任2备胎反击战",
+                  "intro": "饰演：李相赫 · 2015年上映",
+                  "children": []
+                },
+                {
+                  "id": "from-the-sky",
+                  "title": "从天儿降",
+                  "intro": "饰演：乐意 · 2015年上映",
+                  "children": []
+                }
+              ]
             },
             {
-              "id": "legend",
-              "title": "传说",
-              "children": []
-            },
-            {
-              "id": "all-in",
-              "title": "孤注一掷",
-              "children": []
-            },
-            {
-              "id": "changsha-nightlife",
-              "title": "长沙夜生活",
-              "children": []
-            },
-            {
-              "id": "sweeping-storm",
-              "title": "扫黑风暴",
-              "children": []
-            },
-            {
-              "id": "the-glory",
-              "title": "大明风华",
-              "children": []
-            },
-            {
-              "id": "golden-eyes",
-              "title": "黄金瞳",
-              "children": []
-            },
-            {
-              "id": "a-good-show",
-              "title": "一出好戏",
-              "children": []
-            },
-            {
-              "id": "er-yue-hong",
-              "title": "二月红",
-              "children": []
-            },
-            {
-              "id": "movie-other",
-              "title": "其他",
-              "children": []
+              "id": "tv-shows",
+              "title": "电视剧",
+              "children": [
+                {
+                  "id": "sweeping-storm",
+                  "title": "扫黑风暴",
+                  "intro": "2021年播出",
+                  "children": []
+                },
+                {
+                  "id": "the-glory",
+                  "title": "大明风华",
+                  "intro": "2019年播出",
+                  "children": []
+                },
+                {
+                  "id": "golden-eyes",
+                  "title": "黄金瞳",
+                  "intro": "2019年播出",
+                  "children": []
+                },
+                {
+                  "id": "er-yue-hong",
+                  "title": "二月红",
+                  "intro": "《老九门》· 2016年播出",
+                  "children": []
+                },
+                {
+                  "id": "good-mister",
+                  "title": "好先生",
+                  "intro": "2016年播出",
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -382,7 +473,20 @@
             {
               "id": "singer-2",
               "title": "我是唱作人2",
-              "children": []
+              "children": [
+                {
+                  "type": "link",
+                  "platform": "知乎",
+                  "title": "如何看待张艺兴在我是唱作人的《Joker》舞台表现？退乎的回答",
+                  "url": "https://www.zhihu.com/question/388326970/answer/1159005082"
+                },
+                {
+                  "type": "link",
+                  "platform": "知乎",
+                  "title": "【张艺兴×我是唱作人】唱作人的正确打开方式《Joker》篇 - 张艺兴考古贝壳r的文章",
+                  "url": "https://zhuanlan.zhihu.com/p/336542199"
+                }
+              ]
             },
             {
               "id": "street-dance",
@@ -423,7 +527,14 @@
                 {
                   "id": "golden-melody",
                   "title": "金曲",
-                  "children": []
+                  "children": [
+                    {
+                      "type": "link",
+                      "platform": "Bilibili",
+                      "title": "【金曲青春】全十期 cut",
+                      "url": "https://b23.tv/OrWgmlI"
+                    }
+                  ]
                 },
                 {
                   "id": "produce-camp-now",
@@ -447,7 +558,14 @@
         {
           "id": "dream-unwavering",
           "title": "梦想，矢志不渝",
-          "children": []
+          "children": [
+            {
+              "type": "link",
+              "platform": "Bilibili",
+              "title": "「爆哭预警」成功的来时路永远比想象的更艰难，张艺兴值得，值得",
+              "url": "https://b23.tv/Xw7rx4f"
+            }
+          ]
         }
       ]
     },
@@ -630,6 +748,12 @@
               "id": "must-watch-vlog",
               "title": "必看vlog",
               "children": [
+                {
+                  "type": "link",
+                  "platform": "Bilibili",
+                  "title": "【合集·张艺兴的无聊生活】",
+                  "url": "https://b23.tv/2WI5kNK"
+                },
                 {
                   "type": "link",
                   "platform": "Bilibili",
@@ -824,6 +948,30 @@
               "platform": "知乎",
               "title": "如何评价张艺兴",
               "url": "https://www.zhihu.com/question/33467311"
+            },
+            {
+              "type": "link",
+              "platform": "知乎",
+              "title": "【张艺兴×知乎回答】舞蹈 - 张艺兴考古贝壳r的文章",
+              "url": "https://zhuanlan.zhihu.com/p/386908794"
+            },
+            {
+              "type": "link",
+              "platform": "知乎",
+              "title": "如何评价张艺兴的 Krump 水平？- Shen Shawn的回答",
+              "url": "https://www.zhihu.com/question/399944856/answer/1361672426"
+            },
+            {
+              "type": "link",
+              "platform": "知乎",
+              "title": "为什么说张艺兴是有大格局的人？- 锅碗瓢盆的回答",
+              "url": "https://www.zhihu.com/question/413428382/answer/1404594212"
+            },
+            {
+              "type": "link",
+              "platform": "知乎",
+              "title": "如何评价张艺兴的音乐制作水平？- 郭佳的回答",
+              "url": "https://www.zhihu.com/question/361852359/answer/942537677"
             }
           ]
         },
@@ -866,7 +1014,25 @@
         {
           "id": "wb",
           "title": "wb",
-          "children": []
+          "children": [
+            {
+              "id": "yixing-weibo-posts",
+              "title": "艺兴发过的微博",
+              "children": []
+            },
+            {
+              "id": "weibo-interactions",
+              "title": "微博互动",
+              "children": [
+                {
+                  "type": "link",
+                  "platform": "Bilibili",
+                  "title": "感谢张艺兴让我见识了明星微博界面长啥样",
+                  "url": "https://b23.tv/hxQsKNP"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -888,6 +1054,12 @@
                   "platform": "Bilibili",
                   "title": "【张艺兴】【这就是街舞】被贝壳们逗到害羞的宝宝也太可爱了 我们永远爱你呀 宝宝",
                   "url": "https://www.bilibili.com/video/BV1k44y1v7Di/?spm_id_from=333.1387.favlist.content.click"
+                },
+                {
+                  "type": "link",
+                  "platform": "Bilibili",
+                  "title": "私有爱意难藏",
+                  "url": "https://b23.tv/Fl9j96X"
                 }
               ]
             },
@@ -940,7 +1112,14 @@
             {
               "id": "xback",
               "title": "Xback",
-              "children": []
+              "children": [
+                {
+                  "type": "link",
+                  "platform": "知乎",
+                  "title": "LayXback——2021/11/24 艺兴送给兴迷的生日祝福 - 张艺兴考古贝壳的文章",
+                  "url": "https://zhuanlan.zhihu.com/p/310112133"
+                }
+              ]
             },
             {
               "id": "beike-1124",
@@ -962,7 +1141,14 @@
         {
           "id": "other-fan-content",
           "title": "其他饭撒",
-          "children": []
+          "children": [
+            {
+              "type": "link",
+              "platform": "Bilibili",
+              "title": "历年官方情人节七夕物料合集",
+              "url": "https://b23.tv/9V7MbrL"
+            }
+          ]
         }
       ]
     },
@@ -1049,6 +1235,10 @@
             }
           ]
         },
+        {
+          "id": "beike-english-corner-other",
+          "title": "其它",
+          "children": [
         {
           "type": "link",
           "platform": "媒体",
@@ -1157,6 +1347,8 @@
           "title": "“WEST” FULL EP Lyrics translation",
           "url": "https://xingtweettrans1007.medium.com/west-full-ep-lyrics-translation-a23db7ac48ff"
         }
+          ]
+        }
       ]
     },
     {
@@ -1195,6 +1387,12 @@
           "platform": "小红书",
           "title": "张艺兴｜入坑/考古 官方——图2【帮助获取信息...",
           "url": "https://xhslink.cn/o/1YlJf566scS"
+        },
+        {
+          "type": "link",
+          "platform": "微博",
+          "title": "古早极挑时期小羊：是为了摸你头说你乖",
+          "url": "https://cherry.h5.weibo.cn/tiny-video-collection/5186773999878156"
         },
         {
           "type": "link",

@@ -2,6 +2,13 @@
   "id": "new-year-2014",
   "title": "2014年跨年舞台",
   "date": "2014-12-31",
-  "summary": "141231 湖南卫视。链接待补充。",
-  "materials": []
+  "summary": "141231 湖南卫视。",
+  "materials": [
+    {
+      "category": "正式内容",
+      "platform": "YouTube",
+      "title": "141231 湖南卫视",
+      "url": "https://www.youtube.com/watch?v=t6TY7kA93cs&pp=ygUaMjAxNCDlvKDoibrlhbTmuZbljZfot6jlubQ%3D"
+    }
+  ]
 }
