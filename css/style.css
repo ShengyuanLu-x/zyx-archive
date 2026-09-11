@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&display=swap");
 
-/* 自定义中文字体"白无常可可体"。原始 ttf 有 3.9MB，转成 woff2 压缩到了 1.2MB 左右，
-   仍然不算小，访问者第一次打开网站会有一次额外下载，之后浏览器会缓存住。 */
-@font-face {
-  font-family: "Baiwuchang Kekaiti";
-  src: url("../assets/fonts/baiwuchang-kekaiti.woff2") format("woff2");
-  font-display: swap;
-}
-
 :root {
   --bg: #0b0a10;
   --surface: #1d1828;
@@ -16,8 +8,6 @@
   --text: #f1ecf7;
   --muted: #f1ecf7;
   --accent: #d0cbe3;
-  --tag-bg: #d8d3e0;
-  --tag-text: #14111b;
 }
 
 * {
@@ -26,8 +16,8 @@
 
 body {
   margin: 0;
-  font-family: "Baiwuchang Kekaiti", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "KaiTi", "STKaiti", "Kaiti SC", "楷体", "PingFang SC", "Microsoft YaHei",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
@@ -279,12 +269,9 @@ main {
 
 .node-tag {
   display: inline-block;
-  background: var(--tag-bg);
-  color: var(--tag-text);
+  color: var(--text);
   font-size: 12px;
   font-weight: 400;
-  padding: 3px 10px;
-  border-radius: 999px;
   margin-top: 8px;
   line-height: 1.4;
   max-width: 100%;
